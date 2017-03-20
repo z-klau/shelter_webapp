@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+.panel {
+	height: 110px;
+	margin-bottom: 10px;
+}
+
+.right {
+	margin: auto;
+	width: 300px;
+	float: left;
+}
+
+.message {
+	color: #004d99;
+	background-color: #b3d9ff;
+	margin: 10px auto;
+	padding: 4px;
+	width: 500px;
+	max-height: 45px;
+	font-size: 18px;
+	text-align: center;
+	border: 2px solid #004d99;
+	border-radius: 5px;
+}

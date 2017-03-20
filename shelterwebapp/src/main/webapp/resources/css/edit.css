@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+
+
+
+.greenContainer {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 179, 107, 0.4);
+}
+
+.formContainer {
+	margin: 150px auto;
+	width: 300px;
+}
+
+
+.editForm {
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #006666;
+	background-color: #f8f8f8;
+}
+
+.element {
+	margin: auto;
+	margin-bottom: 9px;
+}
+
+.text {
+	padding: 2px;
+	font-size: 18px;
+}
+
+input[type=text], input[type=date], select {
+	width: 100%;
+	padding: 5px 5px;
+	display: inline-block;
+	border: 1px solid #ccc;
+}
+
+input[type=text]:focus, input[type=date]:focus,
+	select:focus {
+	font-family: monospace;
+	background-color: lightblue;
+}

@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+body{
+	background-color: #ecf2f9;
+	font-family: sans-serif;
+}
+
+
+.container{
+	font-family: monospace;
+	background-color: #ffffff;
+	text-align: center;
+	border-radius: 10px;
+	margin: auto;
+	padding: 30px;
+	width: 500px;
+	height:380px;
+	box-shadow: 5px 5px 5px #006666;
+}
+
+.top{
+	height:150px;
+}
+
+.title{
+	font-size: 25px;
+	padding: 20px;
+	margin-top: 20px;
+	
+}
+
+
+
+
+
+
+
+

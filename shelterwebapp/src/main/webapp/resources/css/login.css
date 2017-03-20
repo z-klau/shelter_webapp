@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+.loginContainer {
+	background-color: #ffffff;
+	width: 250px;
+	height: 140px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #006666;
+}
+
+input[type=text], input[type=password], input[type=date], select {
+	width: 90%;
+	margin: 8px;
+	padding: 5px 5px;
+	border: 1px solid #ccc;
+	font-family: monospace;
+}
+

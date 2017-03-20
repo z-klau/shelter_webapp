@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+
+.addingDiv{
+	margin: auto;
+	width: 370px;
+}
+
+.addingForm {
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #006666;
+	background-color: #f8f8f8;
+}
+
+.error{
+	color: #ff4d4d;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.element {
+	margin: auto;
+	margin-bottom: 9px;
+}
+
+.text {
+	padding: 2px;
+	font-size: 18px;
+}
+
+input[type=text], input[type=password], input[type=select], input[type=date],
+	select {
+	font-family: monospace;
+	width: 100%;
+	height: 30px;
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=date]:focus,
+	select:focus {
+	font-family: monospace;
+	background-color: #d6f5f5;
+}
+
+.add {
+	font-size: 18px;
+	color: #ffffff;
+	background-color: #00cc88;
+	margin-top: 10px;
+	margin-left: 80px;
+	width: 200px;
+	height: 40px;
+	border-style: none;
+	border-radius: 4px;
+	padding: 5px 5px;
+}
+
+.add:HOVER {
+	box-shadow: 5px 5px 12px #cccccc;
+}
