@@ -2,51 +2,38 @@ package pl.shelterwebapp.form;
 
 import java.util.Date;
 
-import javax.validation.constraints.DecimalMax;
-import javax.validation.constraints.DecimalMin;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
-import javax.validation.constraints.Size;
 
-import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.NumberFormat;
 
-public class DogForm {
+public class DogSearchForm {
 
-	private Long id;
-
-	@Size(min = 2)
 	private String name;
 
 	private String sex;
 
-	@NotEmpty
 	private String race;
 
 	@NumberFormat
-	@DecimalMin("0.3")
-	@DecimalMax("80.0")
-	private double weight;
+	private double weightFrom;
 
-	@NotEmpty
+	@NumberFormat
+	private double weightTo;
+
 	private String placeOfFind;
 
-	@NotNull
 	@Past
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date dateOfFind;
+	private Date dateOfFindFrom;
+
+	@Past
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	private Date dateOfFindTo;
 
 	private Long penId;
 
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
+	private String penName;
 
 	public String getName() {
 		return name;
@@ -72,12 +59,20 @@ public class DogForm {
 		this.race = race;
 	}
 
-	public double getWeight() {
-		return weight;
+	public double getWeightFrom() {
+		return weightFrom;
 	}
 
-	public void setWeight(double weight) {
-		this.weight = weight;
+	public void setWeightFrom(double weightFrom) {
+		this.weightFrom = weightFrom;
+	}
+
+	public double getWeightTo() {
+		return weightTo;
+	}
+
+	public void setWeightTo(double weightTo) {
+		this.weightTo = weightTo;
 	}
 
 	public String getPlaceOfFind() {
@@ -88,12 +83,20 @@ public class DogForm {
 		this.placeOfFind = placeOfFind;
 	}
 
-	public Date getDateOfFind() {
-		return dateOfFind;
+	public Date getDateOfFindFrom() {
+		return dateOfFindFrom;
 	}
 
-	public void setDateOfFind(Date dateOfFind) {
-		this.dateOfFind = dateOfFind;
+	public void setDateOfFindFrom(Date dateOfFindFrom) {
+		this.dateOfFindFrom = dateOfFindFrom;
+	}
+
+	public Date getDateOfFindTo() {
+		return dateOfFindTo;
+	}
+
+	public void setDateOfFindTo(Date dateOfFindTo) {
+		this.dateOfFindTo = dateOfFindTo;
 	}
 
 	public Long getPenId() {
@@ -102,6 +105,14 @@ public class DogForm {
 
 	public void setPenId(Long penId) {
 		this.penId = penId;
+	}
+
+	public String getPenName() {
+		return penName;
+	}
+
+	public void setPenName(String penName) {
+		this.penName = penName;
 	}
 
 }

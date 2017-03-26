@@ -12,9 +12,8 @@ body{
 	text-align: center;
 	border-radius: 10px;
 	margin: auto;
-	padding: 30px;
+	padding: 50px 30px 60px 30px;
 	width: 500px;
-	height:380px;
 	box-shadow: 5px 5px 5px #006666;
 }
 
@@ -24,8 +23,7 @@ body{
 
 .title{
 	font-size: 25px;
-	padding: 20px;
-	margin-top: 20px;
+	padding-bottom: 20px;
 	
 }
 

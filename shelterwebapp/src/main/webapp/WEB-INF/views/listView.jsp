@@ -63,6 +63,7 @@
 			<table class="mid">
 				<thead>
 					<tr>
+					<th>Nr</th>
 						<th>Imię</th>
 						<th>Płeć</th>
 						<th>Rasa</th>
@@ -80,6 +81,7 @@
 				<tbody>
 					<c:forEach var="d" items="${dogList}">
 						<tr>
+						<td></td>
 							<td>${d.name}</td>
 							<td>${d.sex}</td>
 							<td>${d.race}</td>

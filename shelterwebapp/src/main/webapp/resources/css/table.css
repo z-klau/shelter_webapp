@@ -12,11 +12,22 @@
 	margin: auto;
 	margin-bottom: 30px;
 	border-collapse: collapse;
+	coucounter-reset: rowNumber;
 }
 
 thead {
 	background-color:#00b359;
 	color: white;
+}
+
+tr{
+	 counter-increment: rowNumber;
+}
+
+table tr td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
 }
 
 th, td {

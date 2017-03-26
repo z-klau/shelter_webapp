@@ -4,15 +4,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import pl.shelterwebapp.converter.ObjectConverter;
+import pl.shelterwebapp.dao.PenDao;
 import pl.shelterwebapp.domain.Dog;
 import pl.shelterwebapp.form.DogForm;
-import pl.shelterwebapp.service.PenService;
 
 @Service
 public class DogFormConverterImpl implements ObjectConverter<DogForm, Dog> {
 
 	@Autowired
-	private PenService penService;
+	private PenDao penDao;
 	
 	@Override
 	public Dog convert(DogForm dogFrom) {
@@ -24,7 +24,7 @@ public class DogFormConverterImpl implements ObjectConverter<DogForm, Dog> {
 				dogFrom.getWeight(), 
 				dogFrom.getPlaceOfFind(), 
 				dogFrom.getDateOfFind(),
-				penService.findById(dogFrom.getPenId()));
+				penDao.findById(dogFrom.getPenId()));
 		return dog;
 	}
 

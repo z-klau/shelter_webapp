@@ -17,4 +17,5 @@ public class ConverterTestConfiguration {
 		return new DogConverterImpl();
 	}
 	
+	
 }

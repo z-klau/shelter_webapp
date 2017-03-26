@@ -1,7 +1,14 @@
 @CHARSET "UTF-8";
 
-.addingDiv{
-	margin: auto;
+
+.fix{
+	margin-left:50px;
+	position: fixed;
+}
+
+
+.addingDiv {
+	margin:auto;
 	width: 370px;
 }
 
@@ -12,7 +19,7 @@
 	background-color: #f8f8f8;
 }
 
-.error{
+.error {
 	color: #ff4d4d;
 	font-size: 12px;
 	font-style: italic;
@@ -26,6 +33,13 @@
 .text {
 	padding: 2px;
 	font-size: 18px;
+}
+
+.bigger {
+	margin-bottom: 10px;
+	padding: 3px;
+	font-weight: bold;
+	text-align: center;
 }
 
 input[type=text], input[type=password], input[type=select], input[type=date],

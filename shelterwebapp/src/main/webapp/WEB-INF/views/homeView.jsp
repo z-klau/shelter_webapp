@@ -61,6 +61,7 @@
 					</c:otherwise>
 				</c:choose>
 				<a class="button" href="/shelterwebapp/list">Psy do adopcji</a>
+				<a class="button" href="/shelterwebapp/search">Szukaj</a>
 			</div>
 		</div>
 	</div>

@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableJpaRepositories("pl.shelterwebapp.repository")
 @EnableTransactionManagement
 public class PersistanceContext {
+	
 
 	@Bean
 	public DriverManagerDataSource dataSource() {

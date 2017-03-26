@@ -24,6 +24,9 @@ public class ConverterTest {
 
 	@Autowired
 	private ObjectConverter<Dog, DogDTO> dogConverterImpl;
+	
+	@Autowired
+	private MyDateFormatter MDF;
 
 	List<Dog> dogs;
 
@@ -36,11 +39,11 @@ public class ConverterTest {
 		p1.setId(3L);
 
 		Dog d1 = new Dog(1L, "Albin", "M", "mieszaniec", 23.5, "Warszawa-Ochota",
-				MyDateFormatter.parseToDate("2011-02-10"), p1);
-		Dog d2 = new Dog(2L, "Muniek", "¯", "owczarek", 26.0, "£omianki", MyDateFormatter.parseToDate("2016-05-16"),
+				MDF.parseToDate("2011-02-10"), p1);
+		Dog d2 = new Dog(2L, "Muniek", "¯", "owczarek", 26.0, "£omianki", MDF.parseToDate("2016-05-16"),
 				p1);
 		Dog d3 = new Dog(3L, "Burek", "M", "chihuahua", 3.4, "Warszawa-Centrum",
-				MyDateFormatter.parseToDate("2012-07-12"), p1);
+				MDF.parseToDate("2012-07-12"), p1);
 
 		dogs.add(d1);
 		dogs.add(d2);

@@ -1,26 +1,5 @@
 
 
- CREATE TABLE `pens`(
-  `id` INT NOT NULL auto_increment,
-  `name` VARCHAR(20) NOT NULL,
-  PRIMARY KEY (`id`)
-  );
- 
- 
-  CREATE TABLE `dogs`(
-  `id` INT NOT NULL auto_increment,
-  `name` VARCHAR(25) NOT NULL,
-  `sex` VARCHAR(1) NOT NULL,
-  `race` VARCHAR(25) NOT NULL,
-  `weight` DECIMAL NOT NULL,
-  `place_of_find` VARCHAR(30) NOT NULL,
-  `date_of_find` DATE NOT NULL, 
-  `pen_id` INT NOT NULL,
-  PRIMARY KEY (`id`),
-  FOREIGN KEY(`pen_id`) REFERENCES pens(`id`)
-  );
-
-
 insert into pens (name) values ('s³oneczny');
 insert into pens (name) values ('sosnowy');
 insert into pens (name) values ('brzozowy');

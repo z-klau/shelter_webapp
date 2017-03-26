@@ -56,28 +56,32 @@
 					checked="checked" />
 				<form:radiobutton path="sex" value="Ż" label="żeńska" />
 			</div>
-			<div class="element">
 
+			<div class="element">
 				<div class="text">Podaj rasę:</div>
 				<form:input path="race" type="text" placeholder="tu wprowadź rasę" />
 				<form:errors path="race" cssClass="error"></form:errors>
 			</div>
+
 			<div class="element">
 				<div class="text">Podaj wagę kilogramach:</div>
 				<form:input path="weight" type="text" placeholder="tu wprowadź wagę" />
 				<form:errors path="weight" cssClass="error"></form:errors>
 			</div>
+
 			<div class="element">
 				<div class="text">Podaj miejsce znalezienia:</div>
 				<form:input path="placeOfFind" type="text"
 					placeholder="tu wprowadź miejsce znalezienia" />
 				<form:errors path="placeOfFind" cssClass="error"></form:errors>
 			</div>
+
 			<div class="element">
 				<div class="text">Podaj datę znalezienia:</div>
 				<form:input path="dateOfFind" type="date" />
 				<form:errors path="dateOfFind" cssClass="error"></form:errors>
 			</div>
+
 			<div class="element">
 				<div class="text">Wybierz kojec dla psa</div>
 				<form:select path="penId">
@@ -86,6 +90,7 @@
 					</c:forEach>
 				</form:select>
 			</div>
+
 			<div class="element">
 				<input type="submit" class="add" value="Dodaj" />
 			</div>

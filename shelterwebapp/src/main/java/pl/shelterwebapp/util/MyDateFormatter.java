@@ -5,11 +5,14 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class MyDateFormatter {
 	
 	public static final DateFormat DATE_FORMATTER = new SimpleDateFormat("yyyy-MM-dd");
 
-	public static Date parseToDate(String date) {
+	public Date parseToDate(String date) {
 		try {
 			return DATE_FORMATTER.parse(date);
 		} catch (ParseException e) {
@@ -18,7 +21,7 @@ public class MyDateFormatter {
 		return null;
 	}
 
-	public static String formatToString(Date date) {
+	public String formatToString(Date date) {
 		return DATE_FORMATTER.format(date);
 	}
 	
