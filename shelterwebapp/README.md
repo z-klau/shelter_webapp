@@ -1,6 +1,6 @@
 # ShelterWebapp
 
-Simple webapplication written in Java using among others Spring MVC/Security/Data, Hibernate, Tomcat Server and MySQL database to managing dogs in a shelter. It provides adding, reading, updating and deleting operations.
+Simple webapplication written in Java using among others Spring MVC/Security/Data, Hibernate, Tomcat Server and MySQL database to managing dogs in a shelter. It provides adding, reading, updating and deleting and searching operations.
 
 It works with following database properties: 
 
